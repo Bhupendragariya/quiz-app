@@ -107,14 +107,16 @@ function selectAnswer(e){
     nextBtn.style.display = "block";
 
 
-    function showScore() {
-        resetState();
-        questionElement.innerHTML =`you scored ${score} out of ${question.length}!`;
-        nextButtons.innerHTML ="play Again"
-        nextButtons.style.display = "block";
-    }
-
 }
+
+function showScore() {
+    resetState();
+    questionElement.innerHTML =`you scored ${score} out of ${question.length}!`;
+    nextButtons.innerHTML ="play Again"
+    nextButtons.style.display = "block";
+}
+
+
  function handleNextButton(){
     currentQuestionIndex++;
     if(currentQuestionIndex < question.length){
